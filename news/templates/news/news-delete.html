@@ -1,0 +1,15 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}delete{% endblock %}
+
+{% block content %}
+  <div class="features">
+      <h2>Confirm to delete the comment</h2>
+      <form method="post">
+          {% csrf_token %}
+
+          <span>{{ error }}</span>
+          <button class="btn btn-danger" style="margin-left: -80px" type="submit">Delete</button>
+      </form>
+  </div>
+{% endblock %}

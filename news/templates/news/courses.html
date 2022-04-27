@@ -1,0 +1,16 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Courses{% endblock %}
+
+{% block content %}
+  <div class="features">
+
+     {% for el in cours %}
+          <div class="alert alert-danger" style="width: 80%; margin-left: 100px">
+              <h3>{{ el.name }}</h3>
+              <p>{{ el.info }}</p>
+              <p>{{ el.link }}</p>
+          </div>
+      {% endfor %}
+  </div>
+{% endblock %}

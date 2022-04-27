@@ -1,0 +1,2 @@
+Employees who earn more than average
+salary:

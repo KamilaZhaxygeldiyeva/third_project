@@ -1,0 +1,22 @@
+<{% extends 'main/layout.html' %}
+
+{% block content %}
+ <div class="features">
+     <h2>
+         Authorize
+     </h2>
+     <form method="post">
+         {% csrf_token %}
+         <h5 class="alert alert-info">{{ form.as_p }}</h5>
+         <!--{{ form.username }}<br>
+         {{ form.surname }}<br>
+         {{ form.birth_date }}<br>
+         {{ form.email }}<br>
+         {{ form.password }}<br>
+         {{ form.city }}<br>
+         {{ form.education }}<br>
+         {{ form.phone }}<br>-->
+         <button class="btn btn-success" type="submit">Submit</button>
+     </form>
+ </div>
+{% endblock %}
